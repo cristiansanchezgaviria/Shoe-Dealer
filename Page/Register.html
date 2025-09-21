@@ -7,7 +7,32 @@
 </head>
 <body>
     <form action="/Page/Login.html" method="post">
-    
+        <label for="Usuario">Nombre de Usuario</label>
+        <input id="Usuario" type="text" name="Usuario" placeholder="Ingresar Usuario">
+        <br>
+        <label for="Contraseña">Contraseña</label>
+        <input id="Contraseña" type="password" minlength="8" required name="Contraseña-usuario" placeholder="Ingresar Contraseña"> 
+        <br>
+        <label for="Telefono">Telefono</label>
+        <input id="Telefono" type="number" name="Telefono" placeholder="Ingresar Telefono">
+        <br>
+        <label for="Correo">Correo</label>
+        <input id="Correo" type="email" name="Correo" placeholder="Ingresar Correo">
+        <br>
+        <label for="Nacimiento">Fecha de nacimiento</label>
+        <input id="Nacimiento" type="date" name="Fecha de nacimiento" placeholder="Ingresar Fecha de nacimiento">
+        <br>
+        <label for="Sexo">Genero</label>
+        <select id="Sexo" name="Sexo">
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+        <option value="Indefinido">A veces</option>
+        </select>
+        <br>
+        <label for="terms"></label>
+        <input id="terms" type="checkbox" required> Acepto los términos y condiciones</input>
+        <br>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
